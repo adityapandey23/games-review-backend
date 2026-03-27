@@ -1,5 +1,6 @@
-import { app } from "./src/server.js"; // In bun, extensions usually not needed but using .js for standard ESM
 import "dotenv/config";
+import "./src/monitoring/tracer.js";
+import { app } from "./src/server.js";
 
 const PORT = process.env.PORT || 3000;
 
